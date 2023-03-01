@@ -1,4 +1,4 @@
-# Node Starter
+# Offline-Text
 
 ~~**Update:** A `pnpm-lock.yaml` file was added to the root of the project. If possible use `pnpm` over `npm`. You might like it better. See [the docs 📝](https://pnpm.io/motivation) if interested. If not, delete this file.~~
 
