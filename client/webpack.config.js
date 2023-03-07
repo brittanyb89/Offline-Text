@@ -17,13 +17,13 @@ module.exports = () => {
     plugins: [
       // webpack plugin that generates HTML file and injects bundles
       new HtmlWebpackPlugin({
-        template: "./src/index.html",
+        template: "./index.html",
         title: "Offline Text",
       }),
       // injects our custom service worker
       new InjectManifest({
-        swSrc: "./src/sw.js",
-        swDest: "sw.js",
+        swSrc: "./src-sw.js",
+        swDest: "./src-sw.js",
       }),
       // generates a manifest file
       new WebpackPwaManifest({
@@ -38,7 +38,7 @@ module.exports = () => {
         publicPath: "/",
         icons: [
           {
-            src: path.resolve("src/images/icon.png"),
+            src: path.resolve("src/images/logo.png"),
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join("assets", "icons"),
           },
@@ -49,8 +49,9 @@ module.exports = () => {
     module: {
       // css loaders
       rules: [
+        { test: /\.css$/i, use: ["style-loader", "css-loader"] },
         {
-          test: /\.css$/i,
+          test: /\.m?js$/,
           exclude: /node_modules/,
           // use babel-loader in order to use ES6
           use: {
