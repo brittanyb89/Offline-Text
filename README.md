@@ -1,28 +1,92 @@
 # Offline-Text
 
-~~**Update:** A `pnpm-lock.yaml` file was added to the root of the project. If possible use `pnpm` over `npm`. You might like it better. See [the docs 📝](https://pnpm.io/motivation) if interested. If not, delete this file.~~
+## Table of Contents
 
-## TLDR
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Use of this starter template assumes that you have a 'complete dev environment' setup - a terminal, Node, VS Code, at least. If not, you may want to [start here.](https://www.notion.so/codefinity/Setting-up-a-Local-Dev-Environment-for-JS-02a4e9f4a30043d3a8e7d109be3448f4)
+## Description
 
-1. Click that big green button to start using it.
-2. `clone` your new repo from your GitHub to your local computer
-3. `cd` into the `clone`d repo and enter: `npm i`.
-4. `npm start`
+PWA allows users to use application offline. This application stores data in indexDb and allows users to add, delete, and update data offline. When the user comes back online, the data is synced with the database.
 
-## Some of What's Included
+[View GitHub Repo](#https://github.com/brittanyb89/Offline-Text)
+[Heroku Deployment](#https://offline-text.herokuapp.com/)
 
-- [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-- Various VS Code 'settings' and 'extensions.' Look in the bottom right when you open this up in VS Code to install them.
-- [Vitest](https://vitest.dev/) for testing. Just do `npm test` or `npm t`.
+# User Story
 
-## How To Use
+```
+AS A developer
+I WANT to create notes or code snippets with or without an internet connection
+SO THAT I can reliably retrieve them for later use
+```
 
-Run `npm i` to get all the things installed.
+# Acceptance Criteria
 
-`npm start` will watch the `app` directory for any changes using `nodemon`
+```
+GIVEN a text editor web application
+WHEN I open my application in my editor
+THEN I should see a client server folder structure
+WHEN I run `npm run start` from the root directory
+THEN I find that my application should start up the backend and serve the client
+WHEN I run the text editor application from my terminal
+THEN I find that my JavaScript files have been bundled using webpack
+WHEN I run my webpack plugins
+THEN I find that I have a generated HTML file, service worker, and a manifest file
+WHEN I use next-gen JavaScript in my application
+THEN I find that the text editor still functions in the browser without errors
+WHEN I open the text editor
+THEN I find that IndexedDB has immediately created a database storage
+WHEN I enter content and subsequently click off of the DOM window
+THEN I find that the content in the text editor has been saved with IndexedDB
+WHEN I reopen the text editor after closing it
+THEN I find that the content in the text editor has been retrieved from our IndexedDB
+WHEN I click on the Install button
+THEN I download my web application as an icon on my desktop
+WHEN I load my web application
+THEN I should have a registered service worker using workbox
+WHEN I register a service worker
+THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
+WHEN I deploy to Heroku
+THEN I should have proper build scripts for a webpack application
+```
 
-## Other Notes
+## Installation
 
-To use the new experimental `fetch` that's now in Node, just add: `/* global fetch */` to the top of your file. This will appease ESLint.
+To install necessary dependencies, run the following command:
+
+```
+npm i
+```
+
+## Usage
+
+To run the application, run the following command:
+
+```
+npm start
+```
+
+## Contributing
+
+Please contact me for details on our code of conduct, and the process for submitting pull requests to us.
+
+## License
+
+![NPM](https://img.shields.io/npm/l/inquirer?style=plastic)
+
+MIT License
+
+Copyright (c) 2022 Brittany Burton
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+```
+
+```
