@@ -12,8 +12,8 @@
 
 PWA allows users to use application offline. This application stores data in indexDb and allows users to add, delete, and update data offline. When the user comes back online, the data is synced with the database.
 
-[View GitHub Repo](#https://github.com/brittanyb89/Offline-Text)
-[Heroku Deployment](#https://safe-basin-03004.herokuapp.com/)
+[View GitHub Repo](https://github.com/brittanyb89/Offline-Text)
+[Heroku Deployment](https://safe-basin-03004.herokuapp.com/)
 
 # User Story
 
